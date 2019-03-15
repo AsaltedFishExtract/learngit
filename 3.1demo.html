@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    var name="world";
+    (function(){
+        // var name;         //JS无块级作用域，所以变量声明提升到此处
+        if(typeof name==="undefined"){                                     //进入if控制语句
+            name="Jack";
+            console.log("Goodbye"+name);                                     //执行该语句
+        }else{
+            console.log("Hello"+name);
+        }
+    })();
+
+</script>
+</html>
